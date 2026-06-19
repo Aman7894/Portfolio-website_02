@@ -3,6 +3,9 @@ import { ExternalLink, Github } from 'lucide-react';
 import driveEasyImage from '../assets/Drive.png';
 import perceptronImage from '../assets/gpt.png';
 import hirredImage from '../assets/hirred.png';
+import cleanerImage from '../assets/cleaner.png';
+import vibeloopImage from '../assets/vibeloop.png';
+import codesphereImage from '../assets/codesphere.png';
 
 const projects = [
   {
@@ -14,7 +17,6 @@ const projects = [
     github: "https://github.com/Aman7894/DriveEasy",
     live: "#",
     image: driveEasyImage,
-
   },
   {
     title: "Perceptron",
@@ -25,7 +27,6 @@ const projects = [
     github: "https://github.com/Aman7894/A-Chatbot",
     live: "https://a-chatbot-rho.vercel.app/",
     image: perceptronImage,
-
   },
   {
     title: "Hirred",
@@ -36,7 +37,36 @@ const projects = [
     github: "#",
     live: "#",
     image: hirredImage,
-
+  },
+  {
+    title: "AI Smart Data Cleaner",
+    role: "AI Integration & Full Stack",
+    description: "Architected an intelligent data preprocessing and validation engine. Utilizes Large Language Models to automate data profiling, clean noisy datasets, impute missing entries, and extract schema types from unstructured records.",
+    tech: ["React", "Python", "FastAPI", "Pandas", "Gemini API", "Tailwind"],
+    impact: "Empowers developers to automate tedious data prep pipelines, turning unstructured data into clean, formatted JSON or CSV formats in seconds.",
+    github: "https://github.com/Aman7894/AI-smart-Data-cleaner",
+    live: "#",
+    image: cleanerImage,
+  },
+  {
+    title: "vibeLoop",
+    role: "Full Stack Developer",
+    description: "Engineered a high-performance, real-time social networking platform similar to Instagram, supporting interactive media feeds, robust comments/likes, secure messaging, and low-latency audio/video calls.",
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Clerk Auth", "Socket.IO", "WebRTC", "Cloudinary"],
+    impact: "Combines social networking features with WebRTC-based real-time communication protocols to offer a frictionless peer-to-peer social media calling experience.",
+    github: "https://github.com/Aman7894/vibeLoop",
+    live: "#",
+    image: vibeloopImage,
+  },
+  {
+    title: "Codesphere",
+    role: "Backend & System Architect",
+    description: "Designed and built a collaborative web IDE and remote code execution platform. Features real-time multi-user document sharing, sandboxed compiler execution environment, and custom terminal simulator.",
+    tech: ["React", "Node.js", "Express", "Socket.IO", "Docker", "Monaco Editor"],
+    impact: "Enables developer teams to pair-program and compile multiple programming languages simultaneously in a secure, containerized sandbox.",
+    github: "https://github.com/Aman7894/Codesphere",
+    live: "#",
+    image: codesphereImage,
   }
 ];
 

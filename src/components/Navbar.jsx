@@ -17,6 +17,13 @@ export const Navbar = () => {
           <a href="#projects" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
             View Case Studies
           </a>
+          <a 
+            href="/resume.pdf" 
+            download="Aman_Pal_Resume.pdf"
+            className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+          >
+            Resume
+          </a>
           <a href="#contact" className="text-sm font-medium px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
             Contact
           </a>

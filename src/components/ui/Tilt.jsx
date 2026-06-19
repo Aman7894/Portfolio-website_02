@@ -1,13 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
-interface TiltProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-export const Tilt: React.FC<TiltProps> = ({ children, className = '' }) => {
-  const ref = useRef<HTMLDivElement>(null);
+export const Tilt = ({ children, className = '' }) => {
+  const ref = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
   const x = useMotionValue(0);
@@ -20,7 +15,7 @@ export const Tilt: React.FC<TiltProps> = ({ children, className = '' }) => {
   const rotateX = useTransform(springY, [-0.5, 0.5], ['7deg', '-7deg']);
   const rotateY = useTransform(springX, [-0.5, 0.5], ['-7deg', '7deg']);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e) => {
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;

@@ -1,6 +1,6 @@
 import { Section } from './ui/Section';
 import { Tilt } from './ui/Tilt';
-import { Calendar, ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import profileImage from '../assets/profile.png';
 
 export const About = () => {
@@ -22,9 +22,13 @@ export const About = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors duration-200">
-              <Calendar size={18} />
-              Schedule a Call
+            <a 
+              href="/resume.pdf" 
+              download="Aman_Pal_Resume.pdf"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg glass text-primary font-medium hover:bg-white/10 transition-colors duration-200 border border-primary/20"
+            >
+              <Download size={18} />
+              Download Resume
             </a>
             <a href="#projects" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg glass font-medium hover:bg-white/10 transition-colors duration-200">
               See My Work

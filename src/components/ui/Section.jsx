@@ -1,14 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import type { HTMLMotionProps } from 'framer-motion';
 import { cn } from '../../lib/utils';
 
-interface SectionProps extends HTMLMotionProps<"section"> {
-  children: React.ReactNode;
-  id: string;
-}
-
-export const Section = ({ children, id, className, ...props }: SectionProps) => {
+export const Section = ({ children, id, className, ...props }) => {
   return (
     <motion.section
       id={id}

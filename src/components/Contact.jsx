@@ -66,7 +66,7 @@ export const Contact = () => {
               </div>
             </a>
 
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 glass p-6 rounded-2xl hover:bg-white/[0.05] transition-all group w-full text-left">
+            <a href="https://github.com/Aman7894" target="_blank" rel="noreferrer" className="flex items-center gap-4 glass p-6 rounded-2xl hover:bg-white/[0.05] transition-all group w-full text-left">
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                 <Github className="text-white group-hover:scale-110 transition-transform" />
               </div>

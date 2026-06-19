@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { Section } from './ui/Section';
 import { Tilt } from './ui/Tilt';
 
@@ -45,6 +45,14 @@ export const Hero = () => {
           <a href="#projects" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-foreground text-background font-medium hover:scale-105 transition-transform duration-200">
             View Case Studies
             <ArrowRight size={18} />
+          </a>
+          <a 
+            href="/resume.pdf" 
+            download="Aman_Pal_Resume.pdf"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg glass text-primary font-medium hover:bg-white/10 transition-colors duration-200 border border-primary/20"
+          >
+            Download Resume
+            <Download size={18} />
           </a>
           <a href="#contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg glass font-medium hover:bg-white/10 transition-colors duration-200">
             Let's Connect
